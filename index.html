@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación de Acordeonistas Del Perú - Tradición y Pasión Musical</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/LA_CASA_DEL_ACORDEON.png">
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header y Navegación -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="relative">
+                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-12 w-auto">
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-primary">Asociación de <span class="text-secondary">Acordeonistas</span></h1>
+                        <p class="text-xs text-gray-500">Del Perú - Fundada en 1978</p>
+                    </div>
+                </div>
+
+                <!-- Navegación Desktop -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Inicio</a>
+                    <a href="#acordeones" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Acordeones</a>
+                    <a href="#como-comprar" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Cómo Comprar</a>
+                    <a href="#talleres-contacto" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Talleres y Contacto</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="md:hidden text-2xl text-primary">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Navegación Mobile -->
+            <div id="mobileMenu" class="md:hidden hidden py-4 border-t">
+                <div class="flex flex-col space-y-4">
+                    <a href="#inicio" class="font-medium hover:text-primary transition">Inicio</a>
+                    <a href="#acordeones" class="font-medium hover:text-primary transition">Acordeones</a>
+                    <a href="#como-comprar" class="font-medium hover:text-primary transition">Cómo Comprar</a>
+                    <a href="#talleres-contacto" class="font-medium hover:text-primary transition">Talleres y Contacto</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section con temática peruana -->
+    <section id="inicio" class="relative bg-gradient-to-r from-primary via-red-600 to-secondary text-white py-20 overflow-hidden">
+        <!-- Bandera peruana decorativa -->
+        <div class="absolute top-0 left-0 w-32 h-32 bg-primary transform -translate-x-16 -translate-y-16 rotate-45"></div>
+        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white transform translate-x-16 translate-y-16 rotate-45"></div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-2xl">
+                <div class="mb-6 flex items-center space-x-2">
+                    <img src="https://img.icons8.com/color/48/000000/peru.png" alt="Bandera Perú" class="w-12 h-12">
+                    <span class="text-accent font-bold text-lg">Orgullosamente Peruana</span>
+                </div>
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">Pasión por el <span class="text-accent">Acordeón</span> en el Corazón del Perú</h2>
+                <p class="text-xl mb-8 text-gray-100">Promoviendo la tradición musical peruana a través del acordeón desde 1978. Únete a nuestra comunidad de músicos apasionados.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button id="talleresBtn" class="bg-secondary hover:bg-yellow-600 px-8 py-3 rounded-full font-semibold text-lg transition transform hover:-translate-y-1 shadow-lg">
+                        <i class="fas fa-graduation-cap mr-2"></i> Únete a Nuestros Talleres
+                    </button>
+                    <button id="asociateBtn" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg transition shadow-lg">
+                        <i class="fas fa-users mr-2"></i> Asóciate
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elementos musicales decorativos -->
+        <div class="absolute right-10 bottom-10 text-6xl opacity-20">
+            <i class="fas fa-music"></i>
+        </div>
+    </section>
+
+    <!-- Sobre la Asociación -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-serif font-bold mb-6 text-primary">Nuestra <span class="text-secondary">Historia</span></h2>
+                    <p class="text-lg text-gray-700 mb-6">
+                        Desde 1978, la <span class="font-bold text-primary">Asociación de Acordeonistas Del Perú</span> ha sido el corazón de la comunidad musical peruana dedicada al acordeón. Fundada por maestros como Juan Torres y María Fernández, hemos formado generaciones de músicos.
+                    </p>
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl font-bold text-primary">45+</div>
+                            <div class="text-gray-600">Años de Tradición</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl font-bold text-primary">2,500+</div>
+                            <div class="text-gray-600">Miembros Activos</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl font-bold text-primary">120+</div>
+                            <div class="text-gray-600">Talleres Anuales</div>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl font-bold text-primary">18</div>
+                            <div class="text-gray-600">Filiales Nacionales</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                         alt="Grupo de acordeonistas peruanos" 
+                         class="rounded-xl shadow-2xl">
+                    <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg">
+                        <div class="text-2xl font-bold">"El acordeón es el alma de nuestra música tradicional"</div>
+                        <div class="mt-2 text-secondary">- Juan Carlos Ramos, Presidente</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acordeones Destacados -->
+    <section id="acordeones" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-serif font-bold text-primary mb-4">Acordeones <span class="text-secondary">Recomendados</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Como asociación, negociamos precios especiales para nuestros miembros en las mejores marcas del mercado.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Acordeón para Música Andina" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Precio Miembro
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Hohner Panther</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Recomendado</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ideal para música andina peruana. 31 teclas, 72 bajos, peso ligero.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                                Disponible en Lima, Arequipa, Cusco
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 2,850</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 3,200</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-crown group-hover:rotate-12 transition"></i> 
+                            Precio Exclusivo Socio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Acordeón Profesional" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Más Vendido
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Excelsior 940</h3>
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Tradicional</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Acordeón cromático de botones. Ideal para música folklórica peruana.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-headphones mr-2 text-secondary"></i>
+                                Sonido cálido para huaynos y marinera
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 4,950</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 5,600</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-bolt group-hover:animate-pulse"></i> 
+                            ¡Calidad Premium!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1593114970899-95c26e8d8841?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                             alt="Acordeón Estudiante" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Para Estudiantes
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Scandalli 72</h3>
+                            <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Italiano</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Perfecto para aprender música criolla peruana. Made in Italy.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-gift mr-2 text-secondary"></i>
+                                Incluye: método de aprendizaje
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 3,250</span>
+                                <span class="text-sm text-gray-500 ml-2">+ asesoría personalizada</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-graduation-cap group-hover:bounce"></i> 
+                            Ideal para Iniciar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Cómo Comprar -->
+    <section id="como-comprar" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl font-serif font-bold text-primary mb-4">Cómo <span class="text-secondary">Comprar</span></h2>
+                    <p class="text-xl text-gray-600">Comprar con nosotros es muy fácil, sigue estos simples pasos:</p>
+                </div>
+
+                <!-- Pasos para comprar -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Paso 1 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
+                                1
+                            </div>
+                            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-primary">Descarga el Catálogo</h3>
+                        <p class="text-gray-600">Revisa nuestra selección de acordeones disponibles con precios especiales para socios.</p>
+                        <button id="descargarCatalogo" class="mt-4 bg-primary hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition">
+                            <i class="fas fa-download mr-2"></i> Descargar Catálogo
+                        </button>
+                    </div>
+
+                    <!-- Paso 2 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
+                                2
+                            </div>
+                            <div class="absolute top-0 left-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+                            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-primary">Contáctanos por WhatsApp</h3>
+                        <p class="text-gray-600">Escoge el modelo que te gusta y contáctanos para confirmar disponibilidad y recibir asesoría personalizada.</p>
+                        <a href="https://wa.me/51904703990" target="_blank" class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+                            <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
+                        </a>
+                        <p class="text-sm text-gray-500 mt-2">(+51) 904 703 990</p>
+                    </div>
+
+                    <!-- Paso 3 -->
+                    <div class="text-center">
+                        <div class="relative mb-6">
+                            <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
+                                3
+                            </div>
+                            <div class="absolute top-0 left-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-primary">Realiza el Pago</h3>
+                        <p class="text-gray-600">Elige tu método de pago preferido y confirma tu compra.</p>
+                        <button id="verMetodosPago" class="mt-4 bg-accent hover:bg-yellow-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+                            <i class="fas fa-credit-card mr-2"></i> Ver Métodos de Pago
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Métodos de Pago -->
+                <div id="metodosPago" class="bg-gray-50 p-8 rounded-xl mb-12 hidden">
+                    <h3 class="text-2xl font-bold mb-6 text-primary text-center">Métodos de <span class="text-secondary">Pago</span></h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-white p-6 rounded-lg shadow text-center">
+                            <div class="text-4xl text-primary mb-4">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Transferencia Bancaria</h4>
+                            <p class="text-gray-600 mb-4">Depósito directo a nuestras cuentas:</p>
+                            <div class="text-left text-sm bg-gray-100 p-4 rounded">
+                                <p><strong>BCP:</strong> 123-4567890-1-23</p>
+                                <p><strong>Interbank:</strong> 456-7890123-4-56</p>
+                                <p><strong>BBVA:</strong> 789-0123456-7-89</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow text-center">
+                            <div class="text-4xl text-primary mb-4">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Yape / Plin</h4>
+                            <p class="text-gray-600 mb-4">Pagos rápidos y seguros:</p>
+                            <div class="text-left text-sm bg-gray-100 p-4 rounded">
+                                <p><strong>Yape al:</strong> 904 703 990</p>
+                                <p><strong>Plin al:</strong> 904 703 990</p>
+                                <p><strong>Nombre:</strong> Asoc. Acordeonistas Perú</p>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-white p-6 rounded-lg shadow text-center">
+                            <div class="text-4xl text-primary mb-4">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">Efectivo</h4>
+                            <p class="text-gray-600 mb-4">Paga directamente en nuestra sede:</p>
+                            <div class="text-left text-sm bg-gray-100 p-4 rounded">
+                                <p><i class="fas fa-map-marker-alt text-secondary mr-2"></i> <strong>Dirección:</strong></p>
+                                <p>Av. 28 de Julio 564, Miraflores, Lima</p>
+                                <p class="mt-2"><i class="fas fa-clock text-secondary mr-2"></i> <strong>Horario:</strong></p>
+                                <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                                <p>Sábados: 9:00 AM - 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrega y Envío -->
+                <div class="bg-gradient-to-r from-primary to-secondary text-white p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Entrega y <span class="text-accent">Envío</span></h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="text-center">
+                            <div class="text-5xl mb-4">
+                                <i class="fas fa-truck"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-3">Delivery a Nivel Nacional</h4>
+                            <p>Enviamos a todo el Perú con empresas de transporte seguro. El costo de envío varía según la ubicación.</p>
+                            <div class="mt-4 text-sm">
+                                <p><i class="fas fa-check-circle text-accent mr-2"></i> Empaque especializado</p>
+                                <p><i class="fas fa-check-circle text-accent mr-2"></i> Seguro incluido</p>
+                                <p><i class="fas fa-check-circle text-accent mr-2"></i> Rastreo online</p>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="text-5xl mb-4">
+                                <i class="fas fa-store"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-3">Recoge en Tienda</h4>
+                            <p>Visítanos en nuestra sede principal para ver y probar los instrumentos antes de comprar.</p>
+                            <div class="mt-4">
+                                <p><i class="fas fa-map-marker-alt text-accent mr-2"></i> Av. 28 de Julio 564, Miraflores, Lima</p>
+                                <p><i class="fas fa-phone text-accent mr-2"></i> (+51) 904 703 990</p>
+                                <p><i class="fas fa-clock text-accent mr-2"></i> L-V: 9AM-6PM | Sáb: 9AM-1PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nota importante -->
+                <div class="mt-8 p-6 bg-yellow-50 border border-yellow-200 rounded-xl">
+                    <div class="flex items-start">
+                        <i class="fas fa-exclamation-circle text-yellow-500 text-2xl mr-4 mt-1"></i>
+                        <div>
+                            <h4 class="text-lg font-bold text-yellow-700 mb-2">Nota importante:</h4>
+                            <p class="text-yellow-600">Los precios en el catálogo son referenciales y pueden variar según disponibilidad. Para obtener el precio exacto y confirmar stock, contáctanos por WhatsApp. Los socios de la asociación reciben descuentos especiales adicionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Talleres y Contacto -->
+    <section id="talleres-contacto" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-serif font-bold text-center mb-12 text-primary">Talleres y <span class="text-secondary">Contacto</span></h2>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Información de Contacto -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Información de Contacto</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl text-primary">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Dirección</h4>
+                                    <p class="text-gray-600">Av. 28 de Julio 564, Miraflores, Lima</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl text-primary">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Teléfono / WhatsApp</h4>
+                                    <p class="text-gray-600">(+51) 904 703 990</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl text-primary">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Email</h4>
+                                    <p class="text-gray-600">cultura@asociacióndeacordeonistas.pe</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="text-2xl text-primary">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xl font-bold mb-2">Horario de Atención</h4>
+                                    <p class="text-gray-600">Lunes a Viernes: 9:00 AM - 6:00 PM<br>Sábados: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Redes Sociales -->
+                        <div class="mt-8 pt-8 border-t">
+                            <h4 class="text-xl font-bold mb-4 text-primary">Síguenos en Redes Sociales</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.facebook.com/profile.php?id=61567334271307" target="_blank" class="bg-blue-600 text-white p-3 rounded-full hover:bg-blue-700 transition">
+                                    <i class="fab fa-facebook-f text-xl"></i>
+                                </a>
+                                <a href="https://www.instagram.com/asociaciondeacordeonistasdelperu/" target="_blank" class="bg-pink-600 text-white p-3 rounded-full hover:bg-pink-700 transition">
+                                    <i class="fab fa-instagram text-xl"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@asociacionacordeonistasperu" target="_blank" class="bg-red-600 text-white p-3 rounded-full hover:bg-red-700 transition">
+                                    <i class="fab fa-youtube text-xl"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@asociaciondeacordeonistas" target="_blank" class="bg-black text-white p-3 rounded-full hover:bg-gray-800 transition">
+                                    <i class="fab fa-tiktok text-xl"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulario de Contacto -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6 text-primary">Contáctanos</h3>
+                        <form id="contactForm" class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Nombre completo *</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email *</label>
+                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Asunto *</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="informacion">Información sobre membresía</option>
+                                    <option value="acordeones">Consulta sobre acordeones</option>
+                                    <option value="talleres">Información sobre talleres</option>
+                                    <option value="compras">Consulta sobre compras</option>
+                                    <option value="otros">Otros</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 mb-2">Mensaje *</label>
+                                <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                        
+                        <!-- Membresía Gratuita -->
+                        <div class="mt-8 p-6 bg-gradient-to-r from-primary to-secondary rounded-xl text-white">
+                            <div class="flex items-center mb-4">
+                                <i class="fas fa-crown text-3xl text-accent mr-4"></i>
+                                <div>
+                                    <h4 class="text-xl font-bold">¡Hazte Socio Gratis!</h4>
+                                    <p class="text-sm">Beneficios exclusivos sin costo de membresía</p>
+                                </div>
+                            </div>
+                            <button id="socioGratisBtn" class="w-full bg-white text-primary hover:bg-gray-100 py-3 rounded-lg font-semibold transition">
+                                <i class="fas fa-user-plus mr-2"></i> Convertirme en Socio
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mapa -->
+                <div class="mt-12 bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6 text-primary">Nuestra Ubicación</h3>
+                    <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
+                        <!-- Mapa de Google Maps -->
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.314031220343!2d-77.03368272433256!3d-12.119703544035526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8195f5d0e8d%3A0x36e5d2a8d40e3d68!2sAv.%2028%20de%20Julio%20564%2C%20Miraflores%2015074!5e0!3m2!1ses-419!2spe!4v1708632000000!5m2!1ses-419!2spe" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-10 w-auto">
+                        <div>
+                            <h2 class="text-lg font-bold">Asociación de <span class="text-secondary">Acordeonistas</span></h2>
+                            <p class="text-xs text-gray-400">Del Perú</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Promoviendo nuestra música tradicional desde 1978</p>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">
+                            <i class="fas fa-map-marker-alt text-accent mr-2"></i>
+                            Av. 28 de Julio 564, Miraflores, Lima
+                        </p>
+                        <p class="text-sm text-gray-400 mt-1">
+                            <i class="fas fa-phone text-accent mr-2"></i>
+                            (+51) 904 703 990
+                        </p>
+                        <p class="text-sm text-gray-400 mt-1">
+                            <i class="fas fa-envelope text-accent mr-2"></i>
+                            cultura@asociacióndeacordeonistas.pe
+                        </p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-accent transition">Inicio</a></li>
+                        <li><a href="#acordeones" class="text-gray-400 hover:text-accent transition">Acordeones</a></li>
+                        <li><a href="#como-comprar" class="text-gray-400 hover:text-accent transition">Cómo Comprar</a></li>
+                        <li><a href="#talleres-contacto" class="text-gray-400 hover:text-accent transition">Talleres y Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Recursos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#como-comprar" class="text-gray-400 hover:text-accent transition">Catálogo de Acordeones</a></li>
+                        <li><a href="#talleres-contacto" class="text-gray-400 hover:text-accent transition">Solicitar Membresía</a></li>
+                        <li><a href="#talleres-contacto" class="text-gray-400 hover:text-accent transition">Consultas Técnicas</a></li>
+                        <li><a href="#como-comprar" class="text-gray-400 hover:text-accent transition">Métodos de Pago</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Redes Sociales</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="https://www.facebook.com/profile.php?id=61567334271307" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asociaciondeacordeonistasdelperu/" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@asociacionacordeonistasperu" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@asociaciondeacordeonistas" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400">Suscríbete para recibir noticias:</p>
+                        <div class="flex mt-2">
+                            <input type="email" placeholder="tu@email.com" class="flex-grow px-3 py-2 text-gray-800 rounded-l">
+                            <button class="bg-primary hover:bg-red-700 px-4 rounded-r">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 1978-<span id="currentYear"></span> Asociación de Acordeonistas Del Perú. Todos los derechos reservados.</p>
+                <p class="mt-2">RUC: 20123456789 | Inscrita en Registros Públicos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/51904703990" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <!-- Modal para Socios -->
+    <div id="socioModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full p-8">
+            <div class="text-center mb-6">
+                <i class="fas fa-users text-primary text-4xl mb-4"></i>
+                <h3 class="text-2xl font-bold text-primary mb-2">¡Conviértete en Nuestro Socio!</h3>
+                <p class="text-gray-600 mb-4">Únete a nuestra comunidad de acordeonistas peruanos</p>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+                <div class="flex items-center">
+                    <i class="fas fa-check text-secondary mr-3"></i>
+                    <span>Membresía <span class="font-bold text-primary">GRATUITA</span> permanente</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-secondary mr-3"></i>
+                    <span>Descuentos exclusivos en instrumentos</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-secondary mr-3"></i>
+                    <span>Acceso a eventos especiales</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-check text-secondary mr-3"></i>
+                    <span>Networking con músicos profesionales</span>
+                </div>
+            </div>
+            
+            <div class="flex gap-3">
+                <button onclick="closeModal('socioModal')" class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-lg font-semibold">
+                    Cerrar
+                </button>
+                <a href="#talleres-contacto" onclick="closeModal('socioModal')" class="flex-1 bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold text-center">
+                    ¡Quiero ser socio!
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
