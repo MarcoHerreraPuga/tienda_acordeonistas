@@ -1,21 +1,27 @@
 {
-  "version": 2,
-  "builds": [
+  "buildCommand": null,
+  "outputDirectory": ".",
+  "devCommand": null,
+  "installCommand": null,
+  "framework": null,
+  "routes": [
     {
-      "src": "*.html",
-      "use": "@vercel/static"
-    },
+      "src": "/(.*)",
+      "dest": "/$1",
+      "headers": {
+        "Cache-Control": "no-cache, no-store, must-revalidate"
+      }
+    }
+  ],
+  "headers": [
     {
-      "src": "css/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "js/*",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "assets/*",
-      "use": "@vercel/static"
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
+      ]
     }
   ]
 }
