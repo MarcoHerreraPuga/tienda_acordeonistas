@@ -1,0 +1,10 @@
+node_modules/
+.git/
+README.md
+src/
+.gitignore
+package-lock.json
+package.json
+postcss.config.js
+tailwind.config.js
+*.map
