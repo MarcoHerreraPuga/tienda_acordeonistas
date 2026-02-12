@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeones Nuevos - La Casa del Acordeón</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/LA_CASA_DEL_ACORDEON.png">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header y Navegación - Cargado dinámicamente -->
+    <div id="nav-container"></div>
+
+    <!-- Sección de Acordeones Nuevos -->
+    <section id="acordeones-nuevos" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            
+            <!-- Título -->
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-crown"></i>
+                    PRECIOS EXCLUSIVOS PARA SOCIOS
+                </div>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">
+                    Acordeones <span class="text-secondary">Nuevos</span>
+                </h1>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    Descubre nuestra selección de acordeones nuevos con precios especiales para socios y garantía de fábrica.
+                </p>
+            </div>
+            
+            <!-- Grid de productos -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Producto 1 - Hohner Panther -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/acordeones-nuevos/acordeon1.JPG" 
+                             alt="Acordeón Hohner Panther para Música Andina" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Precio Miembro
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Hohner Panther</h3>
+                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Recomendado</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Ideal para música andina peruana. 31 teclas, 72 bajos, peso ligero.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                                Disponible en Lima, Arequipa, Cusco
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 2,850</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 3,200</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-crown group-hover:rotate-12 transition"></i> 
+                            Precio Exclusivo Socio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Excelsior 940 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/acordeones-nuevos/acordeon2.JPG" 
+                             alt="Acordeón Excelsior 940 Profesional" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Más Vendido
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Excelsior 940</h3>
+                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Tradicional</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Acordeón cromático de botones. Ideal para música folklórica peruana.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-headphones mr-2 text-secondary"></i>
+                                Sonido cálido para huaynos y marinera
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 4,950</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 5,600</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-bolt group-hover:animate-pulse"></i> 
+                            ¡Calidad Premium!
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Scandalli 72 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/acordeones-nuevos/acordeon3.JPG" 
+                             alt="Acordeón Scandalli 72 para Estudiantes" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Para Estudiantes
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Scandalli 72</h3>
+                            <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Italiano</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Perfecto para aprender música criolla peruana. Made in Italy.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-gift mr-2 text-secondary"></i>
+                                Incluye: método de aprendizaje
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 3,250</span>
+                                <span class="text-sm text-gray-500 ml-2">+ asesoría personalizada</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-graduation-cap group-hover:bounce"></i> 
+                            Ideal para Iniciar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BOTÓN CÓMO COMPRAR -->
+            <div class="text-center mt-16">
+                <div class="bg-gradient-to-r from-primary/10 to-secondary/10 p-8 rounded-2xl max-w-3xl mx-auto border border-primary/20">
+                    <h3 class="text-2xl font-bold text-primary mb-4">¿Listo para estrenar acordeón?</h3>
+                    <p class="text-gray-600 mb-6">
+                        Todos nuestros instrumentos nuevos tienen garantía de fábrica y precios especiales para socios.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="./index.html#como-comprar" class="inline-flex items-center gap-2 bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cómo Comprar
+                        </a>
+                        <a href="https://wa.me/51904703990" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                        <i class="fas fa-truck text-primary mr-1"></i>
+                        Envíos a todo el Perú
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Botón Volver al Inicio -->
+            <div class="text-center mt-12">
+                <a href="./index.html" class="inline-flex items-center gap-2 text-gray-600 hover:text-primary transition">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver al Inicio
+                </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-10 w-auto">
+                        <div>
+                            <h3 class="text-lg font-bold">Casa del <span class="text-secondary">Acordeón</span></h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Promoviendo nuestra música tradicional desde 1978</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html#inicio" class="text-gray-400 hover:text-accent transition">Inicio</a></li>
+                        <li><a href="./index.html#categorias" class="text-gray-400 hover:text-accent transition">Categorías</a></li>
+                        <li><a href="./index.html#como-comprar" class="text-gray-400 hover:text-accent transition">Cómo Comprar</a></li>
+                        <li><a href="./index.html#talleres-contacto" class="text-gray-400 hover:text-accent transition">Talleres y Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Contacto</h3>
+                    <p class="text-gray-400 text-sm">Av. 28 de Julio 564, Miraflores</p>
+                    <p class="text-gray-400 text-sm">(+51) 904 703 990</p>
+                    <p class="text-gray-400 text-sm">cultura@asociacióndeacordeonistas.pe</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61567334271307" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asociaciondeacordeonistasdelperu/" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@asociacionacordeonistasperu" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 1978-2025 Casa del Acordeón.</p>
+                <p class="mt-2">RUC: 20123456789 | Inscrita en Registros Públicos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/51904703990" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

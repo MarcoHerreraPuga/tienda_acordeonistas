@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acordeón Diatónico - La Casa del Acordeón</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/LA_CASA_DEL_ACORDEON.png">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header y Navegación - Cargado dinámicamente -->
+    <div id="nav-container"></div>
+
+    <!-- Sección de Acordeón Diatónico -->
+    <section id="acordeon-diatonico" class="py-16 bg-gradient-to-b from-amber-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-amber-100 text-amber-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-music"></i>
+                    EL SONIDO DE LA TRADICIÓN
+                </div>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Acordeón <span class="text-secondary">Diatónico</span></h1>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">El alma de la música andina, huayno, sanjuanito y música tradicional peruana.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 - Hohner Corona II -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/hohner-corona.JPG" 
+                             alt="Acordeón Diatónico Hohner Corona II" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Leyenda
+                        </div>
+                        <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-gray-800 px-3 py-1 rounded-full text-sm font-semibold">
+                            <i class="fas fa-check-circle text-amber-600 mr-1"></i> Hecho en Alemania
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Hohner Corona II</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded">Clásico</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">El acordeón diatónico más usado en el Perú. 31 botones, 12 bajos. Sonido potente y característico.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: Sol/Do
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Incluye estuche y correas
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 3,450</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 3,900</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Hohner Panther Diatónico -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/hohner-panther-diatonico.JPG" 
+                             alt="Acordeón Diatónico Hohner Panther" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Más Vendido
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Hohner Panther</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">3 colores</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Versión diatónica del clásico Panther. 31 botones, 12 bajos. Ideal para huayno y música andina.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: Fa/Si bemol
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Peso: 7.2 kg
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 2,990</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 3,400</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Gabbanelli Diatónico -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/gabbanelli-diatonico.JPG" 
+                             alt="Acordeón Diatónico Gabbanelli" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Premium
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Gabbanelli Profesional</h3>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Hecho en USA</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Acordeón diatónico de alta gama. 31 botones, 12 bajos, sistema Musette. Sonido cristalino.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: Sol/Do
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Voces: 3
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 5,890</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 - Scandalli Diatónico -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/scandalli-diatonico.JPG" 
+                             alt="Acordeón Diatónico Scandalli" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Italiano
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Scandalli Diatónico</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded">Hand-made</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fabricación artesanal italiana. 31 botones, 12 bajos. Sonido cálido y proyección excepcional.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: La/Re
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Fuelles de cuero
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 4,450</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - Acordeón Diatónico Infantil -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/acordeon-infantil.JPG" 
+                             alt="Acordeón Diatónico Infantil" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Para Niños
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Acordeón Infantil</h3>
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">8 bajos</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Perfecto para iniciar. 25 botones, 8 bajos. Peso liviano y tamaño adaptado para niños.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: Do
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Incluye método básico
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 890</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 - Acordeón Diatónico 12 Bajos -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-amber-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/acordeon-12-bajos.JPG" 
+                             alt="Acordeón Diatónico 12 Bajos" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Económico
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Acordeón 12 Bajos</h3>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">Acceso</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">31 botones, 12 bajos. Ideal para estudiantes y músicos que buscan su primer instrumento.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Afinación: Sol/Do
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-amber-600"></i>
+                                Estuche suave incluido
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 1,650</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 1,990</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-amber-600 hover:bg-amber-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-music group-hover:scale-110 transition"></i> 
+                            Lo uso en mis tocadas
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tabla de afinaciones -->
+            <div class="mt-16 max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-2xl shadow-lg border border-amber-100">
+                    <h3 class="text-2xl font-bold text-primary mb-6 text-center">Afinaciones para Música Peruana</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 bg-amber-50 rounded-xl">
+                            <div class="text-3xl font-bold text-amber-700 mb-2">Sol/Do</div>
+                            <p class="text-gray-600">Huayno, Marinera, Tondero</p>
+                            <p class="text-sm text-gray-500 mt-2">La más usada en Perú</p>
+                        </div>
+                        <div class="text-center p-4 bg-amber-50 rounded-xl">
+                            <div class="text-3xl font-bold text-amber-700 mb-2">Fa/Si bemol</div>
+                            <p class="text-gray-600">Huayno, Sanjuanito</p>
+                            <p class="text-sm text-gray-500 mt-2">Sonido más grave</p>
+                        </div>
+                        <div class="text-center p-4 bg-amber-50 rounded-xl">
+                            <div class="text-3xl font-bold text-amber-700 mb-2">La/Re</div>
+                            <p class="text-gray-600">Música criolla, Vals</p>
+                            <p class="text-sm text-gray-500 mt-2">Sonido brillante</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-6 text-center">
+                        <i class="fas fa-info-circle text-amber-600 mr-1"></i>
+                        ¿No sabes qué afinación elegir? Contáctanos y te asesoramos según tu repertorio.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Botón Cómo Comprar -->
+            <div class="text-center mt-16">
+                <div class="bg-gradient-to-r from-amber-50 to-yellow-50 p-8 rounded-2xl max-w-3xl mx-auto border border-amber-200">
+                    <h3 class="text-2xl font-bold text-primary mb-4">¿Listo para tocar huayno como los grandes?</h3>
+                    <p class="text-gray-600 mb-6">Lleva el sonido tradicional peruano a tus manos. Precios especiales para socios y comunidad.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="./index.html#como-comprar" class="inline-flex items-center gap-2 bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cómo Comprar
+                        </a>
+                        <a href="https://wa.me/51904703990" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                        <i class="fas fa-truck text-amber-600 mr-1"></i>
+                        Envíos a todo el Perú
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Botón Volver al Inicio -->
+            <div class="text-center mt-12">
+                <a href="./index.html" class="inline-flex items-center gap-2 text-gray-600 hover:text-primary transition">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-10 w-auto">
+                        <div>
+                            <h3 class="text-lg font-bold">Casa del <span class="text-secondary">Acordeón</span></h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Promoviendo nuestra música tradicional desde 1978</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html#inicio" class="text-gray-400 hover:text-accent transition">Inicio</a></li>
+                        <li><a href="./index.html#categorias" class="text-gray-400 hover:text-accent transition">Categorías</a></li>
+                        <li><a href="./index.html#como-comprar" class="text-gray-400 hover:text-accent transition">Cómo Comprar</a></li>
+                        <li><a href="./index.html#talleres-contacto" class="text-gray-400 hover:text-accent transition">Talleres y Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Contacto</h3>
+                    <p class="text-gray-400 text-sm">Av. 28 de Julio 564, Miraflores</p>
+                    <p class="text-gray-400 text-sm">(+51) 904 703 990</p>
+                    <p class="text-gray-400 text-sm">cultura@asociacióndeacordeonistas.pe</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61567334271307" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asociaciondeacordeonistasdelperu/" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@asociacionacordeonistasperu" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 1978-2025 Casa del Acordeón.</p>
+                <p class="mt-2">RUC: 20123456789 | Inscrita en Registros Públicos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/51904703990" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>

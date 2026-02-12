@@ -12,59 +12,29 @@
     <link rel="icon" type="image/x-icon" href="./assets/LA_CASA_DEL_ACORDEON.png">
 </head>
 <body class="font-sans text-gray-800">
-    <!-- Header y Navegación -->
-    <header class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-4">
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <div class="relative">
-                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-12 w-auto">
-                    </div>
-                    <div>
-                        <h1 class="text-xl md:text-2xl font-bold text-primary">La Casa del <span class="text-secondary">Acordeón</span></h1>
-                    </div>
-                </div>
+    
+    <!-- Header y Navegación - Cargado dinámicamente -->
+    <div id="nav-container"></div>
 
-                <!-- Navegación Desktop -->
-                <nav class="hidden md:flex space-x-8">
-                    <a href="#inicio" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Inicio</a>
-                    <a href="#acordeones" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Acordeones</a>
-                    <a href="#como-comprar" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Cómo Comprar</a>
-                    <a href="#talleres-contacto" class="font-medium hover:text-primary transition relative after:content-[''] after:absolute after:w-0 after:h-1 after:bg-primary after:left-0 after:-bottom-1 after:transition-all hover:after:w-full">Talleres y Contacto</a>
-                </nav>
-
-                <!-- Mobile Menu Button -->
-                <button id="mobileMenuBtn" class="md:hidden text-2xl text-primary">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </div>
-
-            <!-- Navegación Mobile -->
-            <div id="mobileMenu" class="md:hidden hidden py-4 border-t">
-                <div class="flex flex-col space-y-4">
-                    <a href="#inicio" class="font-medium hover:text-primary transition">Inicio</a>
-                    <a href="#acordeones" class="font-medium hover:text-primary transition">Acordeones</a>
-                    <a href="#como-comprar" class="font-medium hover:text-primary transition">Cómo Comprar</a>
-                    <a href="#talleres-contacto" class="font-medium hover:text-primary transition">Talleres y Contacto</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Hero Section con temática peruana -->
-    <section id="inicio" class="relative bg-gradient-to-r from-primary via-red-600 to-secondary text-white py-20 overflow-hidden">
+ <!-- Hero Section con temática peruana - TEXTO CON FONDO -->
+    <!-- Hero Section con temática peruana - TEXTO CON FONDO SEMITRANSPARENTE - CORREGIDO -->
+    <section id="inicio" class="relative py-20 overflow-hidden bg-cover bg-center bg-no-repeat" style="background-image: url('./assets/fondo.JPG'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+        <!-- Overlay sutil -->
+        <div class="absolute inset-0 bg-black/50"></div>
+        
         <!-- Bandera peruana decorativa -->
-        <div class="absolute top-0 left-0 w-32 h-32 bg-primary transform -translate-x-16 -translate-y-16 rotate-45"></div>
-        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white transform translate-x-16 translate-y-16 rotate-45"></div>
+        <div class="absolute top-0 left-0 w-32 h-32 bg-primary/20 transform -translate-x-16 -translate-y-16 rotate-45"></div>
+        <div class="absolute bottom-0 right-0 w-32 h-32 bg-white/10 transform translate-x-16 translate-y-16 rotate-45"></div>
         
         <div class="container mx-auto px-4 relative z-10">
             <div class="max-w-2xl">
+                <!-- CONTENEDOR CON FONDO SEMITRANSPARENTE -->
+                <div class="bg-black/60 backdrop-blur-sm p-8 rounded-2xl border border-white/20">
                 <div class="mb-6 flex items-center space-x-2">
-                    <img src="https://img.icons8.com/color/48/000000/peru.png" alt="Bandera Perú" class="w-12 h-12">
-                    <span class="text-lime-50 font-bold text-lg">Orgullosamente Peruana</span>
+                    <img src="./assets/bandera-peru.png" alt="Bandera Perú" class="w-12 h-12">
+                    <span class="text-white font-bold text-lg">Orgullosamente Peruana</span>
                 </div>
-                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight">Pasión por el <span class="text-accent">Acordeón</span> en el Corazón del Perú</h2>
+                <h2 class="text-4xl md:text-6xl font-serif font-bold mb-6 leading-tight text-white">Pasión por el <span class="text-accent">Acordeón</span> en el Corazón del Perú</h2>
                 <p class="text-xl mb-8 text-gray-100">Promoviendo la tradición musical peruana a través del acordeón desde 1978. Únete a nuestra comunidad de músicos apasionados.</p>
                 <div class="flex flex-wrap gap-4">
                     <button id="talleresBtn" class="bg-secondary hover:bg-yellow-600 px-8 py-3 rounded-full font-semibold text-lg transition transform hover:-translate-y-1 shadow-lg">
@@ -76,13 +46,17 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Elementos musicales decorativos -->
-        <div class="absolute right-10 bottom-10 text-6xl opacity-20">
-            <i class="fas fa-music"></i>
-        </div>
-    </section>
+    </div>
+    
+    <!-- Elementos musicales decorativos -->
+    <div class="absolute right-10 bottom-10 text-6xl opacity-10 text-white">
+        <i class="fas fa-music"></i>
+    </div>
+</section>
 
+
+
+    
     <!-- Sobre la Asociación -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-4">
@@ -111,159 +85,94 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <img src="https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                         alt="Grupo de acordeonistas peruanos" 
-                         class="rounded-xl shadow-2xl">
-                    <div class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg">
-                        <div class="text-2xl font-bold">"El acordeón es el alma de nuestra música tradicional"</div>
-                        <div class="mt-2 text-secondary">- Juan Carlos Ramos, Presidente</div>
-                    </div>
-                </div>
+                <figure class="relative">
+                    <img src="assets/acordeonistas.jpg" 
+                         alt="Grupo de acordeonistas peruanos tocando en un evento tradicional" 
+                         class="rounded-xl shadow-2xl"
+                         width="1000"
+                         height="667">
+                    <figcaption class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg max-w-sm">
+                        <span class="text-2xl font-bold">"El acordeón es el alma de nuestra música tradicional"</span>
+                        <span class="block mt-2 text-secondary">- Juan Carlos Ramos, Presidente</span>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
     <!-- Acordeones Destacados -->
-    <section id="acordeones" class="py-16 bg-gradient-to-b from-gray-50 to-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-serif font-bold text-primary mb-4">Nuevos <span class="text-secondary">Acordeones</span></h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Como asociación, negociamos precios especiales para nuestros miembros en las mejores marcas del mercado.</p>
-            </div>
+<!-- Sección de Categorías - Versión limpia con hover corregido -->
+<!-- Sección de Categorías - Versión Alternativa Completa -->
+<section id="categorias" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+    <div class="container mx-auto px-4 text-center">
+        
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-primary mb-4">
+            Nuestras <span class="text-secondary">Categorías</span>
+        </h2>
+        <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-12">
+            Encuentra todo lo que buscas para tu acordeón
+        </p>
+        
+        <!-- Grid de botones - 5 categorías - CON HOVER POR JAVASCRIPT -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 max-w-6xl mx-auto">
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Producto 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
-                    <div class="relative">
-                        <!-- IMAGEN ACTUALIZADA AQUÍ -->
-                        <img src="./assets/acordeon1.JPG" alt="Acordeón Hohner Panther para Música Andina" class="w-full h-64 object-cover">
-                        <div class="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Precio Miembro
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-bold text-primary">Hohner Panther</h3>
-                            <span class="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">Recomendado</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Ideal para música andina peruana. 31 teclas, 72 bajos, peso ligero.</p>
-                        
-                        <div class="mb-4">
-                            <div class="flex items-center text-sm text-gray-500 mb-1">
-                                <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
-                                Disponible en Lima, Arequipa, Cusco
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <span class="text-2xl font-bold text-primary">S/. 2,850</span>
-                                <span class="text-gray-500 line-through ml-2">S/. 3,200</span>
-                            </div>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
-                            <i class="fas fa-crown group-hover:rotate-12 transition"></i> 
-                            Precio Exclusivo Socio
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Producto 2 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
-                    <div class="relative">
-                        <!-- IMAGEN ACTUALIZADA AQUÍ -->
-                        <img src="./assets/acordeon2.JPG" alt="Acordeón Excelsior 940 Profesional" class="w-full h-64 object-cover">
-                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Más Vendido
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-bold text-primary">Excelsior 940</h3>
-                            <span class="text-xs bg-green-100 text-green-600 px-2 py-1 rounded">Tradicional</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Acordeón cromático de botones. Ideal para música folklórica peruana.</p>
-                        
-                        <div class="mb-4">
-                            <div class="flex items-center text-sm text-gray-500">
-                                <i class="fas fa-headphones mr-2 text-secondary"></i>
-                                Sonido cálido para huaynos y marinera
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <span class="text-2xl font-bold text-primary">S/. 4,950</span>
-                                <span class="text-gray-500 line-through ml-2">S/. 5,600</span>
-                            </div>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
-                            <i class="fas fa-bolt group-hover:animate-pulse"></i> 
-                            ¡Calidad Premium!
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Producto 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
-                    <div class="relative">
-                        <!-- IMAGEN ACTUALIZADA AQUÍ -->
-                        <img src="./assets/acordeon3.JPG" alt="Acordeón Scandalli 72 para Estudiantes" class="w-full h-64 object-cover">
-                        <div class="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                            Para Estudiantes
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-2">
-                            <h3 class="text-xl font-bold text-primary">Scandalli 72</h3>
-                            <span class="text-xs bg-purple-100 text-purple-600 px-2 py-1 rounded">Italiano</span>
-                        </div>
-                        <p class="text-gray-600 mb-4">Perfecto para aprender música criolla peruana. Made in Italy.</p>
-                        
-                        <div class="mb-4">
-                            <div class="flex items-center text-sm text-gray-500">
-                                <i class="fas fa-gift mr-2 text-secondary"></i>
-                                Incluye: método de aprendizaje
-                            </div>
-                        </div>
-                        
-                        <div class="flex items-center justify-between mb-4">
-                            <div>
-                                <span class="text-2xl font-bold text-primary">S/. 3,250</span>
-                                <span class="text-sm text-gray-500 ml-2">+ asesoría personalizada</span>
-                            </div>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="far fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="#como-comprar" class="block w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
-                            <i class="fas fa-graduation-cap group-hover:bounce"></i> 
-                            Ideal para Iniciar
-                        </a>
-                    </div>
-                </div>
-            </div>
+            <!-- 1. Acordeones Nuevos -->
+            <a href="./nuevos_acordeones.html" 
+               class="bg-white border-2 border-primary text-primary px-4 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 shadow-md"
+               style="background-color: white; color: #C8102E; border-color: #C8102E;"
+               onmouseover="this.style.backgroundColor='#C8102E'; this.style.color='white'; this.style.borderColor='#C8102E';"
+               onmouseout="this.style.backgroundColor='white'; this.style.color='#C8102E'; this.style.borderColor='#C8102E';">
+                <i class="fas fa-crown"></i>
+                Nuevos
+            </a>
+            
+            <!-- 2. Usados/Ofertas -->
+            <a href="./acordeones_usados.html" 
+               class="bg-white border-2 border-green-600 text-green-600 px-4 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 shadow-md"
+               style="background-color: white; color: #16a34a; border-color: #16a34a;"
+               onmouseover="this.style.backgroundColor='#16a34a'; this.style.color='white'; this.style.borderColor='#16a34a';"
+               onmouseout="this.style.backgroundColor='white'; this.style.color='#16a34a'; this.style.borderColor='#16a34a';">
+                <i class="fas fa-tag"></i>
+                Usados/Ofertas
+            </a>
+            
+            <!-- 3. Accesorios -->
+            <a href="./accesorios_piezas.html" 
+               class="bg-white border-2 border-blue-600 text-blue-600 px-4 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 shadow-md"
+               style="background-color: white; color: #2563eb; border-color: #2563eb;"
+               onmouseover="this.style.backgroundColor='#2563eb'; this.style.color='white'; this.style.borderColor='#2563eb';"
+               onmouseout="this.style.backgroundColor='white'; this.style.color='#2563eb'; this.style.borderColor='#2563eb';">
+                <i class="fas fa-toolbox"></i>
+                Accesorios
+            </a>
+            
+            <!-- 4. Diatónico -->
+            <a href="./acordeon_diatonico.html" 
+               class="bg-white border-2 border-amber-600 text-amber-600 px-4 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 shadow-md"
+               style="background-color: white; color: #d97706; border-color: #d97706;"
+               onmouseover="this.style.backgroundColor='#d97706'; this.style.color='white'; this.style.borderColor='#d97706';"
+               onmouseout="this.style.backgroundColor='white'; this.style.color='#d97706'; this.style.borderColor='#d97706';">
+                <i class="fas fa-music"></i>
+                Diatónico
+            </a>
+            
+            <!-- 5. Partituras -->
+            <a href="./partituras_metodos_libros.html" 
+               class="bg-white border-2 border-purple-600 text-purple-600 px-4 py-3 rounded-xl font-semibold transition flex items-center justify-center gap-2 shadow-md"
+               style="background-color: white; color: #9333ea; border-color: #9333ea;"
+               onmouseover="this.style.backgroundColor='#9333ea'; this.style.color='white'; this.style.borderColor='#9333ea';"
+               onmouseout="this.style.backgroundColor='white'; this.style.color='#9333ea'; this.style.borderColor='#9333ea';">
+                <i class="fas fa-book-open"></i>
+                Partituras
+            </a>
+            
         </div>
-    </section>
+        
+        <!-- Botón destacado de Acordeones Nuevos -->
+        
+        
+    </div>
+</section>
 
     <!-- Sección Cómo Comprar -->
     <section id="como-comprar" class="py-16 bg-white">
@@ -497,23 +406,23 @@
                         <h3 class="text-2xl font-bold mb-6 text-primary">Contáctanos</h3>
                         <form id="contactForm" class="space-y-4">
                             <div>
-                                <label class="block text-gray-700 mb-2">Nombre completo *</label>
-                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <label for="nombre" class="block text-gray-700 mb-2">Nombre completo *</label>
+                                <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 mb-2">Email *</label>
-                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <label for="email" class="block text-gray-700 mb-2">Email *</label>
+                                <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 mb-2">Teléfono</label>
-                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <label for="telefono" class="block text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 mb-2">Asunto *</label>
-                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                                <label for="asunto" class="block text-gray-700 mb-2">Asunto *</label>
+                                <select id="asunto" name="asunto" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                                     <option value="">Selecciona un asunto</option>
                                     <option value="informacion">Información sobre membresía</option>
                                     <option value="acordeones">Consulta sobre acordeones</option>
@@ -524,8 +433,8 @@
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 mb-2">Mensaje *</label>
-                                <textarea rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                                <label for="mensaje" class="block text-gray-700 mb-2">Mensaje *</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
                             </div>
                             
                             <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold transition">
@@ -553,7 +462,6 @@
                 <div class="mt-12 bg-white p-8 rounded-xl shadow-lg">
                     <h3 class="text-2xl font-bold mb-6 text-primary">Nuestra Ubicación</h3>
                     <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
-                        <!-- Mapa de Google Maps -->
                         <iframe 
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.314031220343!2d-77.03368272433256!3d-12.119703544035526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8195f5d0e8d%3A0x36e5d2a8d40e3d68!2sAv.%2028%20de%20Julio%20564%2C%20Miraflores%2015074!5e0!3m2!1ses-419!2spe!4v1708632000000!5m2!1ses-419!2spe" 
                             width="100%" 
@@ -577,7 +485,7 @@
                     <div class="flex items-center space-x-2 mb-4">
                         <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-10 w-auto">
                         <div>
-                            <h2 class="text-lg font-bold">Casa del <span class="text-secondary">Acordeón</span></h2>
+                            <h3 class="text-lg font-bold">Casa del <span class="text-secondary">Acordeón</span></h3>
                         </div>
                     </div>
                     <p class="text-gray-400 text-sm">Promoviendo nuestra música tradicional desde 1978</p>
@@ -657,45 +565,6 @@
     <a href="https://wa.me/51904703990" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
         <i class="fab fa-whatsapp text-2xl"></i>
     </a>
-
-    <!-- Modal para Socios -->
-    <div id="socioModal" class="fixed inset-0 bg-black/50 hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-2xl max-w-md w-full p-8">
-            <div class="text-center mb-6">
-                <i class="fas fa-users text-primary text-4xl mb-4"></i>
-                <h3 class="text-2xl font-bold text-primary mb-2">¡Conviértete en Nuestro Socio!</h3>
-                <p class="text-gray-600 mb-4">Únete a nuestra comunidad de acordeonistas peruanos</p>
-            </div>
-            
-            <div class="space-y-4 mb-6">
-                <div class="flex items-center">
-                    <i class="fas fa-check text-secondary mr-3"></i>
-                    <span>Membresía <span class="font-bold text-primary">GRATUITA</span> permanente</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-check text-secondary mr-3"></i>
-                    <span>Descuentos exclusivos en instrumentos</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-check text-secondary mr-3"></i>
-                    <span>Acceso a eventos especiales</span>
-                </div>
-                <div class="flex items-center">
-                    <i class="fas fa-check text-secondary mr-3"></i>
-                    <span>Networking con músicos profesionales</span>
-                </div>
-            </div>
-            
-            <div class="flex gap-3">
-                <button onclick="closeModal('socioModal')" class="flex-1 border border-gray-300 text-gray-700 py-3 rounded-lg font-semibold">
-                    Cerrar
-                </button>
-                <a href="#talleres-contacto" onclick="closeModal('socioModal')" class="flex-1 bg-primary hover:bg-red-700 text-white py-3 rounded-lg font-semibold text-center">
-                    ¡Quiero ser socio!
-                </a>
-            </div>
-        </div>
-    </div>
 
     <script src="./js/app.js"></script>
 </body>

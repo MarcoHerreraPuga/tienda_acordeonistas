@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios y Piezas - La Casa del Acordeón</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/LA_CASA_DEL_ACORDEON.png">
+</head>
+<body class="font-sans text-gray-800">
+    
+    <!-- Header y Navegación - Cargado dinámicamente -->
+    <div id="nav-container"></div>
+
+    <!-- Sección de Accesorios y Piezas -->
+    <section id="accesorios-piezas" class="py-16 bg-gradient-to-b from-gray-50 to-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                    <i class="fas fa-toolbox"></i>
+                    TODO PARA TU ACORDEÓN
+                </div>
+                <h1 class="text-4xl md:text-5xl font-serif font-bold text-primary mb-4">Accesorios y <span class="text-secondary">Piezas</span></h1>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Encuentra todo lo que necesitas para mantener, reparar y transportar tu acordeón.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Producto 1 - Estuche Rígido -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/estuche-acordeon.JPG" 
+                             alt="Estuche Rígido para Acordeón" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Más Vendido
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Estuche Rígido Profesional</h3>
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Protección</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Construcción en ABS de alta resistencia, interior acolchado, correas ajustables y cierre de seguridad.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Compatible con 72-120 bajos
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Impermeable y a prueba de golpes
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 450</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 590</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Correas -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/correas-acordeon.JPG" 
+                             alt="Correas Acolchadas para Acordeón" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Oferta
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Correas Ergonómicas</h3>
+                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Comodidad</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Correas acolchadas con gel, ajustables, distribuyen el peso uniformemente. Ideal para largas sesiones.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Acolchado de 3cm
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Ganchos reforzados
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 180</span>
+                                <span class="text-gray-500 line-through ml-2">S/. 240</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Fuelles -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/fuelle-repuesto.JPG" 
+                             alt="Fuelle de Repuesto" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Pieza Original
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Fuelle de Repuesto</h3>
+                            <span class="text-xs bg-gray-100 text-gray-700 px-2 py-1 rounded">24 pliegues</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Fuelle de cartón reforzado y esquineros de cuero. Compatible con acordeones de 72-80 bajos.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Instalación profesional disponible
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Garantía 1 año
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 320</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 - Afinador -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/afinador-acordeon.JPG" 
+                             alt="Afinador Cromático" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Profesional
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Afinador Cromático Korg</h3>
+                            <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded">Alta precisión</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Afinador digital con calibración precisa, display LCD y entrada de micrófono.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Rango: A0-C8
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Batería incluida
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 160</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - Soportes -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/soporte-acordeon.JPG" 
+                             alt="Soporte para Acordeón" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Nuevo
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Soporte Plegable Universal</h3>
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Acero</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Base antideslizante, soporta hasta 15kg, plegable para fácil transporte.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Altura ajustable
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Incluye bolsa de transporte
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 210</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 - Kit de Limpieza -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-blue-500 transition-all duration-300">
+                    <div class="relative">
+                        <img src="./assets/kit-limpieza-acordeon.JPG" 
+                             alt="Kit de Limpieza para Acordeón" 
+                             class="w-full h-64 object-cover"
+                             width="400"
+                             height="256"
+                             onerror="this.src='https://images.unsplash.com/photo-1571974599782-87624638275f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'">
+                        <div class="absolute top-4 left-4 bg-secondary text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Recomendado
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-2">
+                            <h3 class="text-xl font-bold text-primary">Kit de Limpieza Profesional</h3>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Completo</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Incluye paños de microfibra, cepillos especiales, lubricante y limpiador de fuelle.</p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center text-sm text-gray-500 mb-1">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                6 piezas
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-check-circle mr-2 text-blue-600"></i>
+                                Estuche incluido
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <span class="text-2xl font-bold text-primary">S/. 85</span>
+                            </div>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <a href="./index.html#como-comprar" class="block w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition flex items-center justify-center gap-2 group">
+                            <i class="fas fa-shopping-cart group-hover:scale-110 transition"></i> 
+                            Comprar
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón Cómo Comprar -->
+            <div class="text-center mt-16">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl max-w-3xl mx-auto border border-blue-100">
+                    <h3 class="text-2xl font-bold text-primary mb-4">¿Necesitas algo para tu acordeón?</h3>
+                    <p class="text-gray-600 mb-6">Tenemos todos los accesorios y repuestos que buscas. Consulta disponibilidad y precios especiales para socios.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="./index.html#como-comprar" class="inline-flex items-center gap-2 bg-primary hover:bg-red-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fas fa-shopping-cart"></i>
+                            Cómo Comprar
+                        </a>
+                        <a href="https://wa.me/51904703990" target="_blank" class="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-full font-semibold transition shadow-lg">
+                            <i class="fab fa-whatsapp"></i>
+                            Consultar por WhatsApp
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">
+                        <i class="fas fa-truck text-blue-600 mr-1"></i>
+                        Envíos a todo el Perú
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Botón Volver al Inicio -->
+            <div class="text-center mt-12">
+                <a href="./index.html" class="inline-flex items-center gap-2 text-gray-600 hover:text-primary transition">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver al Inicio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <img src="./assets/LA_CASA_DEL_ACORDEON.png" alt="La Casa del Acordeón" class="h-10 w-auto">
+                        <div>
+                            <h3 class="text-lg font-bold">Casa del <span class="text-secondary">Acordeón</span></h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Promoviendo nuestra música tradicional desde 1978</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html#inicio" class="text-gray-400 hover:text-accent transition">Inicio</a></li>
+                        <li><a href="./index.html#categorias" class="text-gray-400 hover:text-accent transition">Categorías</a></li>
+                        <li><a href="./index.html#como-comprar" class="text-gray-400 hover:text-accent transition">Cómo Comprar</a></li>
+                        <li><a href="./index.html#talleres-contacto" class="text-gray-400 hover:text-accent transition">Talleres y Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Contacto</h3>
+                    <p class="text-gray-400 text-sm">Av. 28 de Julio 564, Miraflores</p>
+                    <p class="text-gray-400 text-sm">(+51) 904 703 990</p>
+                    <p class="text-gray-400 text-sm">cultura@asociacióndeacordeonistas.pe</p>
+                </div>
+                
+                <div>
+                    <h3 class="font-bold mb-4 text-lg">Redes Sociales</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=61567334271307" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="https://www.instagram.com/asociaciondeacordeonistasdelperu/" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@asociacionacordeonistasperu" target="_blank" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-sm">
+                <p>&copy; 1978-2025 Casa del Acordeón.</p>
+                <p class="mt-2">RUC: 20123456789 | Inscrita en Registros Públicos</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/51904703990" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script src="./js/app.js"></script>
+</body>
+</html>
