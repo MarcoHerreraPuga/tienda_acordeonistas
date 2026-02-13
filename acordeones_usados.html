@@ -15,7 +15,7 @@
     
     <!-- Header y Navegación - Cargado dinámicamente -->
  <!-- ========== NAV COMPLETO - COPIA ESTO EN TODAS LAS PÁGINAS ========== -->
-<header class="sticky top-0 z-50 bg-white shadow-md">
+<header class="sticky top-0 z-50 shadow-md" style="background: #C8102E; border-bottom: 2px solid #D18813;">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->
@@ -23,75 +23,75 @@
                 <div class="logo-container" style="width: 140px; height: auto;">
                     <img src="./assets/LA_CASA_DEL_ACORDEON.png" 
                          alt="La Casa del Acordeón" 
-                         style="width: 100%; height: auto; object-fit: contain;">
+                         style="width: 100%; height: auto; object-fit: contain; filter: brightness(1.1);">
                 </div>
                 <div>
-                    <h1 class="logo-title font-bold text-primary">
+                    <h1 class="logo-title font-bold text-white">
                         La Casa del 
-                        <span class="text-secondary block">Acordeón</span>
+                        <span class="text-secondary block" style="color: #D18813;">Acordeón</span>
                     </h1>
                 </div>
             </div>
 
             <!-- Navegación Desktop -->
             <nav class="hidden md:flex items-center space-x-8 lg:space-x-12">
-                <a href="./index.html" class="nav-link">Inicio</a>
+                <a href="./index.html" class="nav-link text-white hover:text-[#D18813]">Inicio</a>
                 
                 <div class="categorias-menu">
-                    <a href="#categorias" class="nav-link inline-flex items-center gap-1">
+                    <a href="#categorias" class="nav-link text-white hover:text-[#D18813] inline-flex items-center gap-1">
                         Categorías
-                        <i class="fas fa-chevron-down text-xs chevron-icon"></i>
+                        <i class="fas fa-chevron-down text-xs chevron-icon" style="color: #D18813;"></i>
                     </a>
                     <div class="categorias-submenu">
                         <a href="./nuevos_acordeones.html" class="submenu-item">
-                            <i class="fas fa-crown" style="color: #DAA520;"></i>
+                            <i class="fas fa-crown" style="color: #D18813;"></i>
                             Nuevos Acordeones
                         </a>
                         <a href="./acordeones_usados.html" class="submenu-item">
-                            <i class="fas fa-tag" style="color: #16a34a;"></i>
-                            Acordeones usados
+                            <i class="fas fa-tag" style="color: #D18813;"></i>
+                            Acordeones Usados/Ofertas
                         </a>
                         <a href="./accesorios_piezas.html" class="submenu-item">
-                            <i class="fas fa-toolbox" style="color: #2563eb;"></i>
-                            Accesorios
+                            <i class="fas fa-toolbox" style="color: #D18813;"></i>
+                            Accesorios y Piezas para Acordeónes
                         </a>
                         <a href="./acordeon_diatonico.html" class="submenu-item">
-                            <i class="fas fa-music" style="color: #d97706;"></i>
+                            <i class="fas fa-music" style="color: #D18813;"></i>
                             Acordeón Diatónico
                         </a>
                         <a href="./partituras_metodos_libros.html" class="submenu-item">
-                            <i class="fas fa-book-open" style="color: #9333ea;"></i>
-                            Partituras
+                            <i class="fas fa-book-open" style="color: #D18813;"></i>
+                            Partituras, Métodos y Libros
                         </a>
                         <div class="submenu-arrow"></div>
                     </div>
                 </div>
                 
-                <a href="./index.html#como-comprar" class="nav-link">Cómo Comprar</a>
-                <a href="./index.html#talleres-contacto" class="nav-link">Talleres y Contacto</a>
+                <a href="./index.html#como-comprar" class="nav-link text-white hover:text-[#D18813]">Cómo Comprar</a>
+                <a href="./index.html#talleres-contacto" class="nav-link text-white hover:text-[#D18813]">Talleres y Contacto</a>
             </nav>
 
-            <button id="mobileMenuBtn" class="md:hidden text-2xl text-primary">
+            <button id="mobileMenuBtn" class="md:hidden text-2xl text-white">
                 <i class="fas fa-bars"></i>
             </button>
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobileMenu" class="md:hidden hidden py-4 border-t">
-            <a href="./index.html" class="mobile-link">Inicio</a>
-            <button id="mobileCategoriasBtn" class="mobile-categorias-btn">
+        <div id="mobileMenu" class="md:hidden hidden py-4 border-t" style="border-color: #D18813;">
+            <a href="./index.html" class="mobile-link text-white hover:text-[#D18813]">Inicio</a>
+            <button id="mobileCategoriasBtn" class="mobile-categorias-btn text-white hover:text-[#D18813]">
                 <span>Categorías</span>
-                <i id="categoriasChevronMobile" class="fas fa-chevron-down"></i>
+                <i id="categoriasChevronMobile" class="fas fa-chevron-down" style="color: #D18813;"></i>
             </button>
             <div id="mobileSubmenu" class="hidden mobile-submenu">
-                <a href="./nuevos_acordeones.html">Nuevos</a>
-                <a href="./acordeones_usados.html">Usados</a>
-                <a href="./accesorios_piezas.html">Accesorios</a>
-                <a href="./acordeon_diatonico.html">Diatónico</a>
-                <a href="./partituras_metodos_libros.html">Partituras</a>
+                <a href="./nuevos_acordeones.html" class="text-gray-200 hover:text-[#D18813]">Nuevos</a>
+                <a href="./acordeones_usados.html" class="text-gray-200 hover:text-[#D18813]">Usados</a>
+                <a href="./accesorios_piezas.html" class="text-gray-200 hover:text-[#D18813]">Accesorios</a>
+                <a href="./acordeon_diatonico.html" class="text-gray-200 hover:text-[#D18813]">Diatónico</a>
+                <a href="./partituras_metodos_libros.html" class="text-gray-200 hover:text-[#D18813]">Partituras</a>
             </div>
-            <a href="./index.html#como-comprar" class="mobile-link">Cómo Comprar</a>
-            <a href="./index.html#talleres-contacto" class="mobile-link">Talleres</a>
+            <a href="./index.html#como-comprar" class="mobile-link text-white hover:text-[#D18813]">Cómo Comprar</a>
+            <a href="./index.html#talleres-contacto" class="mobile-link text-white hover:text-[#D18813]">Talleres</a>
         </div>
     </div>
 </header>
@@ -102,20 +102,16 @@
 .nav-link {
     font-weight: 600;
     font-size: 1.125rem;
-    color: #374151;
     position: relative;
     transition: color 0.2s;
     text-decoration: none;
-}
-.nav-link:hover {
-    color: #C8102E;
 }
 .nav-link::after {
     content: '';
     position: absolute;
     width: 0;
     height: 3px;
-    background: #C8102E;
+    background: #D18813;
     left: 0;
     bottom: -0.5rem;
     transition: width 0.2s;
@@ -135,7 +131,7 @@
     width: 16rem;
     background: white;
     border-radius: 0.75rem;
-    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+    box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
     border: 1px solid #f3f4f6;
     z-index: 50;
     padding: 0.5rem 0;
@@ -152,13 +148,18 @@
     align-items: center;
     gap: 0.75rem;
     padding: 0.75rem 1.5rem;
-    color: inherit;
+    color: #374151;
     text-decoration: none;
     transition: all 0.2s;
 }
 .submenu-item:hover {
     background-color: #f9fafb;
     color: #C8102E;
+}
+.submenu-item i {
+    font-size: 1.1rem;
+    width: 1.5rem;
+    text-align: center;
 }
 .submenu-arrow {
     position: absolute;
@@ -176,11 +177,7 @@
     font-weight: 600;
     font-size: 1.125rem;
     padding: 0.5rem 0;
-    color: #374151;
     text-decoration: none;
-}
-.mobile-link:hover {
-    color: #C8102E;
 }
 .mobile-categorias-btn {
     display: flex;
@@ -192,26 +189,18 @@
     padding: 0.5rem 0;
     background: none;
     border: none;
-    color: #374151;
     cursor: pointer;
-}
-.mobile-categorias-btn:hover {
-    color: #C8102E;
 }
 .mobile-submenu {
     margin-left: 1rem;
     padding-left: 1rem;
-    border-left: 2px solid #e5e7eb;
+    border-left: 2px solid rgba(255,255,255,0.2);
     margin-top: 0.5rem;
 }
 .mobile-submenu a {
     display: block;
     padding: 0.5rem 0;
-    color: #4b5563;
     text-decoration: none;
-}
-.mobile-submenu a:hover {
-    color: #C8102E;
 }
 </style>
 
