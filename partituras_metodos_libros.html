@@ -265,154 +265,265 @@ document.addEventListener('DOMContentLoaded', function() {
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
-                
-                <!-- 1. Método para Acordeón - Nivel 1 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-purple-100 to-purple-200 flex items-center justify-center">
-                        <i class="fas fa-book-open text-6xl text-purple-600"></i>
-                        <div class="absolute top-4 left-4 bg-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Más Vendido
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Método para Acordeón - Nivel 1</h3>
-                        <p class="text-gray-600 text-sm mb-3">Autor: Juan Torres Ramos</p>
-                        <p class="text-gray-600 mb-4">El método más usado en conservatorios del Perú. Incluye ejercicios progresivos y CD.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 65</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
-                </div>
+              
 
-                 <!-- 2. Método para Acordeón - Nivel 3 -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
-                        <i class="fas fa-music text-6xl text-amber-600"></i>
-                        <div class="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Profesional
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Método para Acordeón - Nivel 3</h3>
-                        <p class="text-gray-600 text-sm mb-3">Autor: Juan Torres Ramos</p>
-                        <p class="text-gray-600 mb-4">Técnicas avanzadas, improvisación y repertorio de concierto. Incluye DVD.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 85</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
+<!-- 1. METODO PER FISARMONICA - ANZAGHI -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/metodo-anzaghi.jpg" 
+                 alt="Metodo Per Fisarmonica - Anzaghi" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-primary text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
+                <i class="fas fa-crown text-secondary text-xs"></i>
+                MÁS VENDIDO
+            </div>
+            <div class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-primary px-3 py-1.5 rounded-full text-xs font-bold shadow-lg border border-primary/30">
+                <i class="fas fa-book-open mr-1"></i>
+                Italiano
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">Metodo Per Fisarmonica</h3>
+                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full font-semibold">Anzaghi</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Método completo para acordeón</p>
+            <p class="text-gray-500 text-xs mb-3">Editorial: Ricordi</p>
+            <p class="text-gray-600 mb-4 text-sm">Método histórico italiano. Técnica progresiva desde nivel inicial hasta avanzado.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 89</span>
+                    <span class="text-gray-500 line-through ml-2 text-sm">S/. 120</span>
                 </div>
-                
-                <!-- 3. Huaynos Peruanos para Acordeón -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center">
-                        <i class="fas fa-flag text-6xl text-red-600"></i>
-                        <div class="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Peruano
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Huaynos Peruanos para Acordeón</h3>
-                        <p class="text-gray-600 text-sm mb-3">Recopilación de 30 huaynos</p>
-                        <p class="text-gray-600 mb-4">Los mejores huaynos clásicos transcritos para acordeón diatónico y cromático.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 45</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
-                </div>
-
-                
- <!-- 4. Método de Acordeón Diatónico -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-amber-100 to-amber-200 flex items-center justify-center">
-                        <i class="fas fa-music text-6xl text-amber-600"></i>
-                        <div class="absolute top-4 left-4 bg-amber-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Andino
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Método de Acordeón Diatónico</h3>
-                        <p class="text-gray-600 text-sm mb-3">Para música andina</p>
-                        <p class="text-gray-600 mb-4">Aprende a tocar huayno, marinera y sanjuanito. Técnica específica para botones.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 55</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- 5. Valses Peruanos para Acordeón -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-                        <i class="fas fa-music text-6xl text-blue-600"></i>
-                        <div class="absolute top-4 left-4 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            Criollo
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Valses Peruanos para Acordeón</h3>
-                        <p class="text-gray-600 text-sm mb-3">15 valses clásicos</p>
-                        <p class="text-gray-600 mb-4">La Flor de la Canela, Alma, Corazón y Vida, El Plebeyo y más.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 48</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Producto 6 - Acordeón Diatónico 12 Bajos -->
-                <!-- 6. Enciclopedia del Acordeón -->
-                <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-purple-500 transition-all duration-300">
-                    <div class="relative h-48 bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center">
-                        <i class="fas fa-book text-6xl text-green-600"></i>
-                        <div class="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                            2 tomos
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <h3 class="text-xl font-bold text-primary mb-2">Enciclopedia del Acordeón</h3>
-                        <p class="text-gray-600 text-sm mb-3">Edición de lujo</p>
-                        <p class="text-gray-600 mb-4">Historia, construcción, repertorio y grandes intérpretes del Perú y el mundo.</p>
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="text-2xl font-bold text-primary">S/. 120</span>
-                            <div class="flex text-yellow-400">
-                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                            </div>
-                        </div>
-                        <a href="./index.html#como-comprar" class="block w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold text-center transition">
-                            <i class="fas fa-shopping-cart mr-2"></i>Comprar
-                        </a>
-                    </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                 </div>
             </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+    
+    <!-- 2. 30 PEZZI CELEBRI - AURORI VARI - VOL.1 -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/30-pezzi-celebri-vol1.jpg" 
+                 alt="30 Pezzi Celebri - Aurori Vari - Vol.1" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-blue-600 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
+                <i class="fas fa-briefcase text-white text-xs"></i>
+                PROFESIONAL
+            </div>
+            <div class="absolute top-4 right-4 bg-amber-500 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                <i class="fas fa-star mr-1"></i>
+                Vol. 1
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">30 Pezzi Celebri</h3>
+                <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">Ricordi</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Aurori Vari - Álbum Ricordi Vol.1</p>
+            <p class="text-gray-500 text-xs mb-3">Obras clásicas seleccionadas</p>
+            <p class="text-gray-600 mb-4 text-sm">30 piezas célebres de la música clásica adaptadas para acordeón.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 75</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+    
+    <!-- 3. I REGISTRI DELLA FISARMONICA -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/i-registri-della-fisarmonica.jpg" 
+                 alt="I Registri della Fisarmonica" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-gradient-to-r from-amber-700 to-amber-900 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1.5">
+                <i class="fas fa-music text-amber-200 text-xs"></i>
+                TÉCNICO
+            </div>
+            <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                <i class="fas fa-book mr-1"></i>
+                Especializado
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">I Registri della Fisarmonica</h3>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Estudio completo de registros</p>
+            <p class="text-gray-500 text-xs mb-3">Método técnico avanzado</p>
+            <p class="text-gray-600 mb-4 text-sm">Guía exhaustiva sobre el uso de registros en acordeón. Ideal para concertistas.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 95</span>
+                    <span class="text-gray-500 line-through ml-2 text-sm">S/. 110</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+    
+    <!-- 4. 30 PEZZI CELEBRI - AURORI VARI - VOL.2 (copia) -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/30-pezzi-celebri-vol2.jpg" 
+                 alt="30 Pezzi Celebri - Aurori Vari - Vol.2" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-indigo-600 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
+                <i class="fas fa-star text-yellow-300 text-xs"></i>
+                VOLUMEN 2
+            </div>
+            <div class="absolute top-4 right-4 bg-purple-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                <i class="fas fa-music mr-1"></i>
+                Clásico
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">30 Pezzi Celebri - Vol.2</h3>
+                <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded-full font-semibold">Ricordi</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Aurori Vari - Álbum Ricordi Vol.2</p>
+            <p class="text-gray-500 text-xs mb-3">Repertorio intermedio-avanzado</p>
+            <p class="text-gray-600 mb-4 text-sm">Segundo volumen con 30 nuevas piezas del repertorio clásico internacional.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 75</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+    
+    <!-- 5. 30 PEZZI CELEBRI - AURORI VARI - VOL.3 (segunda copia) -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/30-pezzi-celebri-vol3.jpg" 
+                 alt="30 Pezzi Celebri - Aurori Vari - Vol.3" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-gradient-to-r from-green-700 to-emerald-800 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1.5">
+                <i class="fas fa-leaf text-green-200 text-xs"></i>
+                ANDINO
+            </div>
+            <div class="absolute top-4 right-4 bg-amber-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                <i class="fas fa-crown mr-1"></i>
+                Vol. 3
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">30 Pezzi Celebri - Vol.3</h3>
+                <span class="text-xs bg-amber-100 text-amber-700 px-2 py-1 rounded-full font-semibold">Ricordi</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Aurori Vari - Álbum Ricordi Vol.3</p>
+            <p class="text-gray-500 text-xs mb-3">Repertorio avanzado</p>
+            <p class="text-gray-600 mb-4 text-sm">Tercer volumen. Piezas de concierto para acordeonistas profesionales.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 80</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+    
+    <!-- 6. AMICA FISARMONICA - SYLVIA PAGNI -->
+    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-2 border-transparent hover:border-primary transition-all duration-300">
+        <div class="relative">
+            <img src="./assets/partituras-metodos/amica-fisarmonica-sylvia-pagni.jpg" 
+                 alt="Amica Fisarmonica - Sylvia Pagni" 
+                 class="w-full h-64 object-cover"
+                 width="400"
+                 height="256"
+                 onerror="this.src='https://images.unsplash.com/photo-1544717305-2782549b5136?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80'; this.onerror=null;">
+            <div class="absolute top-4 left-4 bg-pink-600 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg flex items-center gap-1">
+                <i class="fas fa-heart text-pink-200 text-xs"></i>
+                INFANTIL
+            </div>
+            <div class="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                <i class="fas fa-child mr-1"></i>
+                Principiantes
+            </div>
+        </div>
+        <div class="p-6">
+            <div class="flex items-center justify-between mb-2">
+                <h3 class="text-xl font-bold text-primary">Amica Fisarmonica</h3>
+                <span class="text-xs bg-pink-100 text-pink-700 px-2 py-1 rounded-full font-semibold">Sylvia Pagni</span>
+            </div>
+            <p class="text-gray-600 text-sm mb-1">Método para niños y jóvenes</p>
+            <p class="text-gray-500 text-xs mb-3">Editorial: Berben</p>
+            <p class="text-gray-600 mb-4 text-sm">Método lúdico y didáctico con ilustraciones. Ideal para primeros pasos en acordeón.</p>
+            
+            <div class="flex items-center justify-between mb-4">
+                <div>
+                    <span class="text-2xl font-bold text-primary">S/. 65</span>
+                </div>
+                <div class="flex text-yellow-400">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+            </div>
+            <a href="./index.html#como-comprar" class="block w-full bg-gradient-to-r from-primary to-red-700 hover:from-red-700 hover:to-primary text-white py-3 rounded-lg font-bold transition-all flex items-center justify-center gap-2 group shadow-lg">
+                <i class="fas fa-crown text-secondary group-hover:rotate-12 transition"></i> 
+                Precio Exclusivo Socio
+            </a>
+        </div>
+    </div>
+</div>
 
+                
+                
+            
             <!-- Tabla de afinaciones -->
             <div class="mt-16 max-w-4xl mx-auto">
                 <div class="bg-white p-8 rounded-2xl shadow-lg border border-amber-100">
