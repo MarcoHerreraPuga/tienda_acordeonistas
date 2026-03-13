@@ -15,7 +15,7 @@
     
     <!-- Header y Navegación - Cargado dinámicamente -->
     <!-- ========== NAV COMPLETO - COPIA ESTO EN TODAS LAS PÁGINAS ========== -->
-<header class="sticky top-0 z-50 shadow-md" style="background: #C8102E; border-bottom: 2px solid #D18813;">
+<header class="sticky top-0 z-50 shadow-md" style="background: #FF7F7F; border-bottom: 2px solid #D18813;">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
             <!-- Logo -->
@@ -55,10 +55,7 @@
                             <i class="fas fa-toolbox" style="color: #D18813;"></i>
                             Accesorios y Piezas para Acordeónes
                         </a>
-                        <a href="./acordeon_diatonico.html" class="submenu-item">
-                            <i class="fas fa-music" style="color: #D18813;"></i>
-                            Acordeón Diatónico
-                        </a>
+                       
                         <a href="./partituras_metodos_libros.html" class="submenu-item">
                             <i class="fas fa-book-open" style="color: #D18813;"></i>
                             Partituras, Métodos y Libros
@@ -261,7 +258,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <p class="text-xl mb-8 text-gray-100">Promoviendo la tradición musical peruana a través del acordeón desde 1978. Únete a nuestra comunidad de músicos apasionados.</p>
                 <div class="flex flex-wrap gap-4">
                     <button id="talleresBtn" class="bg-secondary hover:bg-yellow-600 px-8 py-3 rounded-full font-semibold text-lg transition transform hover:-translate-y-1 shadow-lg">
-                        <i class="fas fa-graduation-cap mr-2"></i> Únete a Nuestros Talleres
+                        <i class="fas fa-graduation-cap mr-2"></i> El Mundo de los Acordeones
                     </button>
                     <button id="asociateBtn" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-lg transition shadow-lg">
                         <i class="fas fa-users mr-2"></i> Asóciate
@@ -292,19 +289,19 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="grid grid-cols-2 gap-6 mb-8">
                         <div class="text-center p-4 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-primary">45+</div>
-                            <div class="text-gray-600">Años de Tradición</div>
+                            <div class="text-gray-600">MUSICA</div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-primary">2,500+</div>
-                            <div class="text-gray-600">Miembros Activos</div>
+                            <div class="text-gray-600">CULTURA</div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-primary">120+</div>
-                            <div class="text-gray-600">Talleres Anuales</div>
+                            <div class="text-gray-600">TRADICIÓN</div>
                         </div>
                         <div class="text-center p-4 bg-gray-50 rounded-lg">
                             <div class="text-3xl font-bold text-primary">18</div>
-                            <div class="text-gray-600">Filiales Nacionales</div>
+                            <div class="text-gray-600">IDENTIDAD</div>
                         </div>
                     </div>
                 </div>
@@ -316,7 +313,7 @@ document.addEventListener('DOMContentLoaded', function() {
                          height="667">
                     <figcaption class="absolute -bottom-6 -left-6 bg-primary text-white p-6 rounded-xl shadow-lg max-w-sm">
                         <span class="text-2xl font-bold">"El acordeón es el alma de nuestra música tradicional"</span>
-                        <span class="block mt-2 text-secondary">- Juan Carlos Ramos, Presidente</span>
+                        
                     </figcaption>
                 </figure>
             </div>
@@ -406,54 +403,43 @@ document.addEventListener('DOMContentLoaded', function() {
                 </div>
 
                 <!-- Pasos para comprar -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                    <!-- Paso 1 -->
-                    <div class="text-center">
-                        <div class="relative mb-6">
-                            <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
-                                1
-                            </div>
-                            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-primary">Descarga el Catálogo</h3>
-                        <p class="text-gray-600">Revisa nuestra selección de acordeones disponibles con precios especiales para socios.</p>
-                        <button id="descargarCatalogo" class="mt-4 bg-primary hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition">
-                            <i class="fas fa-download mr-2"></i> Descargar Catálogo
-                        </button>
-                    </div>
+              
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12 max-w-4xl mx-auto">
+    <!-- Paso 1 (anteriormente paso 2) -->
+    <div class="text-center">
+        <div class="relative mb-6">
+            <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
+                1
+            </div>
+            <div class="absolute top-0 left-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-primary">Contáctanos por WhatsApp</h3>
+        <p class="text-gray-600">Escoge el modelo que te gusta y contáctanos para confirmar disponibilidad y recibir asesoría personalizada.</p>
+        <a href="https://wa.me/51904703990" target="_blank" class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition">
+            <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
+        </a>
+        <p class="text-sm text-gray-500 mt-2">(+51) 904 703 990</p>
+    </div>
 
-                    <!-- Paso 2 -->
-                    <div class="text-center">
-                        <div class="relative mb-6">
-                            <div class="w-20 h-20 bg-secondary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
-                                2
-                            </div>
-                            <div class="absolute top-0 left-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
-                            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-primary">Contáctanos por WhatsApp</h3>
-                        <p class="text-gray-600">Escoge el modelo que te gusta y contáctanos para confirmar disponibilidad y recibir asesoría personalizada.</p>
-                        <a href="https://wa.me/51904703990" target="_blank" class="inline-block mt-4 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-semibold transition">
-                            <i class="fab fa-whatsapp mr-2"></i> Contactar por WhatsApp
-                        </a>
-                        <p class="text-sm text-gray-500 mt-2">(+51) 904 703 990</p>
-                    </div>
+    <!-- Paso 2 (anteriormente paso 3) - AHORA CON EL FORMATO DEL ANTIGUO PASO 1 -->
+    <div class="text-center">
+        <div class="relative mb-6">
+            <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
+                2
+            </div>
+            <!-- Eliminada la línea decorativa izquierda que tenía antes -->
+            <div class="absolute top-0 right-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
+        </div>
+        <h3 class="text-xl font-bold mb-3 text-primary">Realiza el Pago</h3>
+        <p class="text-gray-600">Elige tu método de pago preferido y confirma tu compra.</p>
+        <button id="verMetodosPago" class="mt-4 bg-primary hover:bg-red-700 text-white px-6 py-2 rounded-lg font-semibold transition">
+            <i class="fas fa-credit-card mr-2"></i> Ver Métodos de Pago
+        </button>
+    </div>
+</div>
 
-                    <!-- Paso 3 -->
-                    <div class="text-center">
-                        <div class="relative mb-6">
-                            <div class="w-20 h-20 bg-accent rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto">
-                                3
-                            </div>
-                            <div class="absolute top-0 left-0 w-10 h-1 bg-gray-300 hidden md:block"></div>
-                        </div>
-                        <h3 class="text-xl font-bold mb-3 text-primary">Realiza el Pago</h3>
-                        <p class="text-gray-600">Elige tu método de pago preferido y confirma tu compra.</p>
-                        <button id="verMetodosPago" class="mt-4 bg-accent hover:bg-yellow-600 text-white px-6 py-2 rounded-lg font-semibold transition">
-                            <i class="fas fa-credit-card mr-2"></i> Ver Métodos de Pago
-                        </button>
-                    </div>
-                </div>
+                
 
                 <!-- Métodos de Pago -->
                 <div id="metodosPago" class="bg-gray-50 p-8 rounded-xl mb-12 hidden">
@@ -685,7 +671,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <h3 class="text-2xl font-bold mb-6 text-primary">Nuestra Ubicación</h3>
                     <div class="h-64 bg-gray-200 rounded-lg overflow-hidden">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.314031220343!2d-77.03368272433256!3d-12.119703544035526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8195f5d0e8d%3A0x36e5d2a8d40e3d68!2sAv.%2028%20de%20Julio%20564%2C%20Miraflores%2015074!5e0!3m2!1ses-419!2spe!4v1708632000000!5m2!1ses-419!2spe" 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.0357!2d-76.9345!3d-12.0789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f5c5f5c5f5%3A0x5f5c5f5c5f5c5f5c!2sZaragoza%20257%2C%20Lima%2015024!5e0!3m2!1ses!2spe!4v1708632000000!5m2!1ses!2spe" 
                             width="100%" 
                             height="100%" 
                             style="border:0;" 
